@@ -1,0 +1,15 @@
+{
+    "products":
+    [
+        {
+            "id" : 1,
+            "name" : "S8",
+            "imagepath" : "..img/s8.jpg"
+        },
+        {
+            "id" : 2,
+            "name" : "iphone",
+            "imagepath" : "..img/iphone.jpg"
+        }
+    ]
+}

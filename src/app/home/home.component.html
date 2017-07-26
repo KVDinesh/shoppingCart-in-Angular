@@ -1,0 +1,85 @@
+
+	 <div id ="main" class="row">
+		
+		<div class="col-md-1">
+			
+			<ul id="get_category" class= "nav nav-pills nav-stacked">
+			</ul>
+			
+			<ul id="get_brand" class= "nav nav-pills nav-stacked">
+			</ul> 
+			
+		</div>
+		 <div class="col-md-10">
+			<div class="panel panel-default">
+				<div class="panel-heading" style='background-color:#2D3E50; color:white;'>Products</div>
+		      	<div class="panel-body">
+					<div id = "get_product"> 
+						
+					</div> 
+		      		<div class="col-md-4">
+		      			<div class="panel panel-info">
+		      				<div class="panel-heading">iphone 7</div>
+		      				<div class="panel-body">
+		      					<img style="width:200px;height:200px;"src="../assets/images/iphone7.jpg"/>
+		      				</div>
+		      				<div class="panel-heading"> 
+		      				$500.00
+		      				<button class="button btn-primary" style="float: right;">Add to cart</button>
+		      				</div>
+		      			</div>
+		      		</div>
+		      		<div class="col-md-4">
+		      			<div class="panel panel-info">
+		      				<div class="panel-heading"> Samsung galaxy S8</div>
+		      				<div class="panel-body">
+		      					<img style="width:200px;height:200px" [src]="fullImagePath"/>
+		      				</div>
+		      				<div class="panel-heading"> 
+		      				$500.00
+		      				<button class="button btn-primary" style="float: right;">Add to cart</button>
+		      				</div>
+		      			</div>
+		      		</div>
+		      		<div class="col-md-4">
+		      			<div class="panel panel-info">
+		      				<div class="panel-heading"> macbook pro</div>
+		      				<div class="panel-body">
+		      					<img style="width:200px;height:200px;" src="../assets/images/macbookpro.jpg"/>
+		      				</div>
+		      				<div class="panel-heading"> 
+		      				$500.00
+		      				<button class="button btn-primary" style="float: right;">Add to cart</button>
+		      				</div>
+		      			</div>
+		      		</div>
+		      		<div class="col-md-4">
+		      			<div class="panel panel-info">
+		      				<div class="panel-heading"> Dell Xps</div>
+		      				<div class="panel-body">
+		      					<img style="width:200px;height:200px;" src="../assets/images/dellxps.jpg"/>
+		      				</div>
+		      				<div class="panel-heading"> 
+		      				$500.00
+		      				<button class="button btn-primary" style="float: right;">Add to cart</button>
+		      				</div>
+		      			</div>
+		      		</div>
+	
+		      	</div>
+			</div>
+		</div>
+	</div>
+<h1>
+  {{title}}
+  <h2> Product List </h2>
+  <ul *ngFor="let product of products ">
+      <li (click)="addtocart(product.name)"> {{product.name}} </li>
+  </ul>
+</h1> 
+  
+
+<h2> Cart List </h2>
+      <ul *ngFor="let item of cart">
+        <li>{{item}}</li>
+
