@@ -7,12 +7,14 @@ import { ProductService } from "./product.service";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-   title = 'app';
+  title = 'app';
   public cart = [];
-  constructor(private productService:ProductService) { 
+  public products = [];
+  constructor(public productService:ProductService) { 
   }
-   products = [];
-  ngOnInit() {
+  ngOnInit()
+  {
+
     this.productService.getProducts().subscribe(responseProducts => this.products = responseProducts);
   }
   addtocart(name)

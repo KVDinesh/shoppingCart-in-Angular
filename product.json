@@ -4,12 +4,15 @@
         {
             "id" : 1,
             "name" : "S8",
-            "imagepath" : "..img/s8.jpg"
+            "imagepath" : "..images/galaxy-s8.jpg",
+            "price": "$665"
         },
         {
             "id" : 2,
             "name" : "iphone",
-            "imagepath" : "..img/iphone.jpg"
+            "imagepath" : "..images/iphone7.jpg",
+            "price":"$775"
+
         }
     ]
 }
