@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   title = 'app';
   public cart = [];
   public products = [];
-  constructor(public productService:ProductService) { 
+  constructor(private productService:ProductService) { 
   }
   ngOnInit()
   {

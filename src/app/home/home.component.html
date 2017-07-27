@@ -36,6 +36,6 @@
 		</div>
 	</div>
 
- <ul *ngFor="let item of cart">
-		{{item}}
-</ul>
+<app-cart [carts]="item"
+*ngFor="let item of cart">
+</app-cart>
